@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  }
+
+  
+.audio{
+  width: auto;
+  height: 50px;
+  top: 10px;
+  position: fixed;
+}
+
+.titulo{
+  padding-top: 70px;
+}
+
+.text {
+  font-size: 20px;
+  padding: 15px;
+  font-family: fantasy
+}
+
+.carta {
+  background-color: white;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+  
+h1 {
+  color: #4CAF50;
+}
+  
+p {
+  color: #555;
+}
+  
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+  
+button:hover {
+  background-color: #45a049;
+}
+  
+  
+footer {
+  padding: 30px;
+  background-color: #2C964A;
+  
+}
+
+.text2 {
+  text-align: center;
+  color: white;
+}
+
+.text3 {
+  text-align: center;
+  color: #000000;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}

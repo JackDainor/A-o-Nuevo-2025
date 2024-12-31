@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Año Nuevo</title>
+</head>
+<body>
+  
+  <!-- Boton en la pantalla  -->
+  
+    <div id="button-container">
+      
+        <button id="click-button">sube tu volumen y Haz clic aquí</button>
+    </div>
+
+    <div id="main-content">
+
+  <!-- Pantalla principal-->
+
+	<div>
+	  <h1><span>¡FELIZ AÑO NUEVO 2025<br></span> MI AMOR!</h1>
+	  <p>¡MARIELA SAUCEDO MAMANI!<br>
+
+	    <a href="felicitaciones.html">Has click aqui amor</a>
+	  </p>
+	</div>
+
+	<!-- Script Librería ScrollReveal.js -->
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+	<!-- Script jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Script Librería Fireworks.js -->
+	<script src="script.js"></script>
+
+	<!-- Script Configuración Fireworks.js -->
+	<script>
+	  $('div').fireworks({
+	    opacity: 0.9,
+	    width: '100%',
+	    height: '100%'
+	  });
+	</script>
+
+	<!-- Scripts Configuración ScrollReveal.js -->
+	<script>
+	  ScrollReveal().reveal('h1', {
+	    delay: 2000,
+	    duration: 2000,
+	    distance: '400%',
+	    origin: 'top',
+	    opacity: null
+	  });
+
+	  ScrollReveal().reveal('p', {
+	    delay: 3000,
+	    duration: 3000,
+	    distance: '400%',
+	    origin: 'bottom',
+	    opacity: null
+	  });
+	</script>
+
+  <!-- musica de fondo -->
+	
+	<audio loop id="miMusica" src="musica2.mp3" preload="auto"></audio>
+
+	<script>
+	  // Función para reproducir música
+	  function reproducirMusica() {
+	    const musica = document.getElementById('miMusica');
+	    musica.play();
+	  }
+
+	  // Escuchar el primer clic en el documento
+	  document.addEventListener('click', () => {
+	    reproducirMusica();
+	    // Eliminar el oyente para evitar múltiples llamadas
+	    document.removeEventListener('click', arguments.callee);
+	  });
+	</script>
+	
+<!-- fin de la pantalla principal -->
+
+</div>
+
+    <script>
+        const button = document.getElementById('click-button');
+        const mainContent = document.getElementById('main-content');
+        const buttonContainer = document.getElementById('button-container');
+
+        button.addEventListener('click', function() {
+            buttonContainer.style.display = 'none'; // Ocultar el botón
+            mainContent.style.display = 'block'; // Mostrar el contenido principal
+        });
+    </script>
+
+</body>
+</html>

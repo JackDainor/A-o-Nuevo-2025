@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>felicidades</title>
+  <link rel="stylesheet" href="felicidades.css">
+</head>
+
+<body>
+  
+  <!--Audio de fondo-->
+
+<div class="audio">
+
+    <audio controls loop id="miMusica" src="musica1.mp3" preload="auto"></audio>
+
+
+    <script>
+        // Función para reproducir música
+        function reproducirMusica() {
+            const musica = document.getElementById('miMusica');
+            musica.play();
+        }
+
+        // Escuchar el primer clic en el documento
+        document.addEventListener('click', () => {
+            reproducirMusica();
+            // Eliminar el oyente para evitar múltiples llamadas
+            document.removeEventListener('click', arguments.callee);
+        });
+    </script>
+    
+    
+</div>
+  
+  <h1 class="titulo">¡MI AMOR!</h1>
+  <p class="text">
+"En este Año Nuevo quiero agradecerte por estar a mi lado, por ser mi novia mi apoyo y mi inspiración. Cada día a tu lado es un regalo. Prometo seguir construyendo nuestro camino juntos, enfrentando cada desafío con amor y determinación. Que este 2025 y todos los años que vienen estén llenos de felicidad, crecimiento y amor eterno. Te amo con todo mi corazón Mariela 😍😍🥰🥰."
+</p>
+
+
+    <div class="carta">
+        <h1>¡Mi Niña!</h1>
+        <p>"Estoy muy agradecido de tenerte en mi vida. Cada momento contigo hace que mi vida sea especial😊😍."</p>
+        <p>¡Te amo muchísimo mi niña hermosa 🥰😍!</p>
+        <button onclick="mostrarMensaje0()">Mostrar Mensaje</button>
+    </div>
+
+    <script>
+        function mostrarMensaje0() {
+            alert('"Que el amor que compartimos crezca aún más en este nuevo año. ¡Feliz 2025, mi niña hermosa🥰🥰😍😍!".');
+        }
+    </script>
+    
+    
+    <br>
+    
+    
+    <div class="carta">
+      <h1>¡Como dijo Sunan!</h1>
+      <p>"Para mi, no importa lo que otros digan de ti🥺, o lo que tú creas de ti misma😕.Te amo demasiado, en verdad te amo con locura,😍 y quiero estar siempre contigo.🥰😍😊"</p>
+      <audio controls>
+        <source src="sunan.mp3">
+      </audio>
+      <button onclick="mostrarMensaje1()">Ver Mensaje</button>
+    
+    </div>
+
+    <script>
+      function mostrarMensaje1() {
+        alert("No me importa lo que otros digan de ti, yo solo te amo a tí, solamente a ti mi amor 🥰🥰 y no pienso serte infiel con una cualquiera😒,  yo  te elegí a ti,mi corazon te eligió a tí y quiero estar contigo por toda mi vida🥰🥰😍😍");
+      }
+    </script>
+    
+    <br>
+    
+    
+    <div class="carta">
+      <h1>¡Mi vida!</h1>
+      <p>"Ahh, mi vida 🥰 nunca olvidaré esa carita tan tierna y bonita que tienes que me enamora aún más😍😍,  siempre te llevaré en mi alma y en mi corazón"</p>
+  
+      <button id="mostrarImagenBtn">Ver Imagen</button>
+      
+        <div id="imagenContainer" class="ocultar">
+      
+          <img class="img1" src="img1.jpg" alt="Imagen" id="imagen">
+      
+          <img class="img1" src="img2.jpg" alt="imagen2" id="imagen">
+      
+          <script src="script.js"></script>
+          
+
+        </div>
+        
+    </div>
+
+<style>
+      #imagenContainer {
+        margin-top: 20px;
+      }
+
+      .ocultar {
+        display: none;
+      }
+      
+      
+      .img1{
+        width: auto;
+        height: 195px;
+        border-radius: 7%;
+      }
+      
+    </style>
+
+    <script>
+      document.getElementById('mostrarImagenBtn').addEventListener('click', function() {
+        const imagenContainer = document.getElementById('imagenContainer');
+
+        // Alternar la visibilidad de la imagen
+        if (imagenContainer.classList.contains('ocultar')) {
+          imagenContainer.classList.remove('ocultar');
+          this.textContent = 'Ocultar Imagen';
+        } else {
+          imagenContainer.classList.add('ocultar');
+          this.textContent = 'Mostrar Imagen';
+          
+        }
+      });
+    </script>
+        
+<br>
+
+<footer>
+  <h1 class="text2">FELIZ AÑO NUEVO 2025 MI NIÑA HERMOSA MARIELA</h1>
+  
+  <p class="text3">Mi amor toca el boton de whatsapp y enviame el mensaje</p>
+  <div class="icon">
+    <a href="https://api.whatsapp.com/send?phone=59163614354&text=Ya lo ví mi amor ♥︎♥︎♥︎">
+      <img src="whatsapp.png" width="80px" height="auto">
+    </a>
+  </div>
+
+</footer>
+
+
+</body>
+</html>
+
